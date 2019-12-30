@@ -9,19 +9,21 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection = 0
- 
+    @State private var selection = 0    
+    
     var body: some View {
         TabView(selection: $selection){
+            //            SubjectList.swift参照
             SubjectList()
+                .environmentObject(UserDataAccesible())
                 .font(.title)
                 .tabItem {
                     VStack {
                         Image(systemName: "pencil")
                         Text("Today")
                     }
-                }
-                .tag(0)
+            }
+            .tag(0)
             Text("Second View")
                 .font(.title)
                 .tabItem {

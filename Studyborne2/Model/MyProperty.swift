@@ -8,6 +8,8 @@
 
 import Foundation
 
+// ユーザ設定など、個人のプリファレンスをまとめました。
+
 struct MyProperty: Hashable, Codable, Identifiable {
     var id: Int
     var name: String

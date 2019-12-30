@@ -6,16 +6,31 @@
 //  Copyright © 2019 Tix. All rights reserved.
 //
 
+import UIKit
 import SwiftUI
 
 struct SubjectList: View {
+    @EnvironmentObject private var userdata: UserDataAccesible
+    
+    
     var body: some View {
         NavigationView {
-            List {
-                SubjectRow(mydata: myData[0], subject: mySubjectData[0])
-                SubjectRow(mydata: myData[0], subject: mySubjectData[1])
+            VStack {
+                List(userdata.subject) { subject in
+                    SubjectRow(mydata: myData[0], subject: subject)
+                }
+                .navigationBarTitle("Today")
+                .navigationBarItems(trailing: HeaderView())
+                
+                
+                Button(action: {}) {
+                    Image(systemName: "plus.circle")
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                        .foregroundColor(Color.gray)
+                }
             }
-            .navigationBarTitle("Today")
+            
         }
     }
 }
@@ -23,5 +38,6 @@ struct SubjectList: View {
 struct SubjectList_Previews: PreviewProvider {
     static var previews: some View {
         SubjectList()
+        .environmentObject(UserDataAccesible())
     }
 }

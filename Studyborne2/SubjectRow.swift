@@ -11,6 +11,7 @@ import SwiftUI
 struct SubjectRow: View {
     var mydata: MyProperty
     var subject: MySubjects
+    
     var body: some View {
         HStack {
             Text(subject.title)
@@ -21,7 +22,7 @@ struct SubjectRow: View {
             
             Text(String(subject.today_time))
                 .font(.system(.body, design: .monospaced))
-            
+                
             Spacer()
             
             Button(action: {}) {
@@ -33,7 +34,8 @@ struct SubjectRow: View {
             .padding(10)
             
             VStack {
-                Button(action: {}) {
+                Button(action: {
+                }) {
                     Image(systemName: "arrow.up.square.fill")
                         .resizable()
                         .frame(width: 50.0, height: 50.0)

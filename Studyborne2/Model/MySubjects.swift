@@ -8,6 +8,8 @@
 
 import Foundation
 
+// 教科ごとのデータ格納です。
+
 struct MySubjects: Hashable, Codable, Identifiable {
     var title: String;
     var id: Int;
