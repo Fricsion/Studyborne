@@ -13,7 +13,7 @@ struct ArcView: View {
     let myrad: Double
     let radius: CGFloat
     let color: Color
-    let center: CGPoint = CGPoint(x: 100, y: 100)
+    let center: CGPoint = CGPoint(x: 150, y: 150)
     
 
     
@@ -35,7 +35,7 @@ struct ArcView: View {
 struct ArcView_Previews: PreviewProvider {
     static var previews: some View {
         ArcView(myrad: 290, radius: 50, color: Color.green)
-            .previewLayout(.fixed(width: 200, height: 200))
+            .previewLayout(.fixed(width: 300, height: 300))
             
     }
 }

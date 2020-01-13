@@ -16,7 +16,7 @@ struct AnalogStopwatch: View {
     
     
     var Hour_pies: some View {
-        ForEach(-hours_passed..<0) { i in
+        ForEach(-hours_passed..<0, id: \.self) { i in
             ArcView(myrad: 360, radius: 30 - 10*CGFloat(i), color: Color.init(red: 0, green: 1 + 0.1 * Double(i), blue: 0))
         }
     }
@@ -32,7 +32,7 @@ struct AnalogStopwatch: View {
 
 struct AnalogStopwatch_Previews: PreviewProvider {
     static var previews: some View {
-        AnalogStopwatch(hours_passed: 4, minutes_passed: 20)
-            .previewLayout(.fixed(width: 200, height: 200))
+        AnalogStopwatch(hours_passed: 12, minutes_passed: 20)
+            .previewLayout(.fixed(width: 300, height: 300))
     }
 }

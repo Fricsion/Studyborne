@@ -41,7 +41,10 @@ struct EncourageView: View {
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
-                        .padding(.bottom, 300.0)
+                    
+                    StopwatchView()
+                    
+                    Spacer()
                     
                 }
             }
