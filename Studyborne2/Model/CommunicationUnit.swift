@@ -7,38 +7,40 @@
 //
 
 import Foundation
-import Combine
 
-class CommunicationUnit: ObservableObject {
-    
-    @Published var mydata_sample: [Foo] = []
-    @Published var subject: [MySubjects] = []
-    
-    init() {
-        get(from: URL(string: "https://uec.jottama.jp/test")!)
+func get<T: Decodable>(from url_string: String, completionBlock: @escaping (T) -> Void) -> Void {
+    guard let url = URL(string: url_string) else {
+        fatalError()
     }
-    
-    func get(from url: URL) {
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if error != nil {
-                print("An error occupied")
-            }
-            self.mydata_sample = try! JSONDecoder().decode([Foo].self, from: data!)
+    let task: URLSessionTask = URLSession.shared.dataTask(with: url) { data, response, error in
+        guard let data: Data = data else {
+            fatalError()
+        }
+        do {
+            let decoder = JSONDecoder()
+            let json = try decoder.decode(T.self, from: data)
+            print(json)
+            completionBlock(json)
+        } catch {
+            print(error)
         }
     }
+    task.resume()
 }
 
+
+// -------------------------
 struct Foo: Decodable {
-    var info: Bar
-    var response: Baz
+    var info: Bar?
+    var response: Baz?
 }
 
 struct Bar: Decodable {
-    var timestamp: Int
-    var result: String
+    var timestamp: Int?
+    var result: String?
 }
 
 struct Baz: Decodable {
-    var test: String
-    var test2: String
+    var test: String?
+    var test2: String?
 }

@@ -10,6 +10,8 @@ import SwiftUI
 
 struct EncourageView: View {
     
+    @Binding var showEncourageView: Bool
+    
     let backGroundColor = LinearGradient(gradient: Gradient(colors: [Color.pink, Color.yellow]), startPoint: .top, endPoint: .bottom)
     
     var body: some View {
@@ -49,6 +51,6 @@ struct EncourageView: View {
 
 struct EncourageView_Previews: PreviewProvider {
     static var previews: some View {
-        EncourageView()
+        EncourageView(showEncourageView: .constant(true))
     }
 }

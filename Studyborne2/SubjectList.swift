@@ -11,13 +11,10 @@ import SwiftUI
 
 struct SubjectList: View {
     @EnvironmentObject private var userdata: UserDataAccesible
-    @ObservedObject private var comuni = CommunicationUnit()
-    
     
     var body: some View {
         NavigationView {
             VStack {
-                Text(comuni.mydata_sample[0].info.result)
                 
                 List(userdata.subject) { subject in
                     SubjectRow(mydata: myData[0], subject: subject)

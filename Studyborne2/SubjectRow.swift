@@ -47,7 +47,6 @@ struct SubjectRow: View {
                     .font(.system(.body, design: .monospaced))
             }
         }
-        .background(Color(subject.color))
         .cornerRadius(10)
     }
 }

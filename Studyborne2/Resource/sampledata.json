@@ -1,0 +1,14 @@
+[
+{"info":{"timestamp":1577700431,"result":"success"},"response":{"test":"abc","test2":"def"}}
+]
+
+[
+{"property": "info",
+"timestamp": XXXX,
+"result": "success"
+},
+{"property": "response",
+"test": "abc",
+"test2": "def"
+}
+]

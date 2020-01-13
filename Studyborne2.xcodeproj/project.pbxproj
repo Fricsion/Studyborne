@@ -11,6 +11,14 @@
 		281C583A23B828C20077F951 /* EncourageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C583923B828C20077F951 /* EncourageView.swift */; };
 		281C583C23B8E6A60077F951 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C583B23B8E6A60077F951 /* HeaderView.swift */; };
 		281C584223BA015A0077F951 /* CommunicationUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C584123BA015A0077F951 /* CommunicationUnit.swift */; };
+		28635F0123CB58FA00F3AED5 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28635F0023CB58FA00F3AED5 /* StopWatch.swift */; };
+		28C39F4123BA39CA00AD0294 /* sampledata.json in Resources */ = {isa = PBXBuildFile; fileRef = 28C39F4023BA39CA00AD0294 /* sampledata.json */; };
+		28C39F4523BC3DAA00AD0294 /* RecordTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C39F4423BC3DAA00AD0294 /* RecordTable.swift */; };
+		28C39F4723BC415200AD0294 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C39F4623BC415200AD0294 /* ToolsView.swift */; };
+		28C39F4923BC711000AD0294 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C39F4823BC711000AD0294 /* StopwatchView.swift */; };
+		28C39F4B23BCCE8C00AD0294 /* AnalogStopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C39F4A23BCCE8C00AD0294 /* AnalogStopwatch.swift */; };
+		28DDCEE423C9D0010062E209 /* MyMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDCEE323C9D0010062E209 /* MyMethod.swift */; };
+		28DDCEE623C9E13A0062E209 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDCEE523C9E13A0062E209 /* ArcView.swift */; };
 		28ED58F623B791F900B91A80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED58F523B791F900B91A80 /* AppDelegate.swift */; };
 		28ED58F823B791F900B91A80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED58F723B791F900B91A80 /* SceneDelegate.swift */; };
 		28ED58FA23B791F900B91A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED58F923B791F900B91A80 /* ContentView.swift */; };
@@ -31,6 +39,14 @@
 		281C583923B828C20077F951 /* EncourageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncourageView.swift; sourceTree = "<group>"; };
 		281C583B23B8E6A60077F951 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		281C584123BA015A0077F951 /* CommunicationUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationUnit.swift; sourceTree = "<group>"; };
+		28635F0023CB58FA00F3AED5 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		28C39F4023BA39CA00AD0294 /* sampledata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampledata.json; sourceTree = "<group>"; };
+		28C39F4423BC3DAA00AD0294 /* RecordTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTable.swift; sourceTree = "<group>"; };
+		28C39F4623BC415200AD0294 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		28C39F4823BC711000AD0294 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
+		28C39F4A23BCCE8C00AD0294 /* AnalogStopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogStopwatch.swift; sourceTree = "<group>"; };
+		28DDCEE323C9D0010062E209 /* MyMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMethod.swift; sourceTree = "<group>"; };
+		28DDCEE523C9E13A0062E209 /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		28ED58F223B791F900B91A80 /* Studyborne2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Studyborne2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28ED58F523B791F900B91A80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28ED58F723B791F900B91A80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,11 +96,16 @@
 			children = (
 				28ED58F523B791F900B91A80 /* AppDelegate.swift */,
 				28ED58F723B791F900B91A80 /* SceneDelegate.swift */,
+				281C583923B828C20077F951 /* EncourageView.swift */,
+				281C583B23B8E6A60077F951 /* HeaderView.swift */,
 				28ED58F923B791F900B91A80 /* ContentView.swift */,
 				28ED591723B7A0F700B91A80 /* SubjectList.swift */,
 				28ED591523B79A3C00B91A80 /* SubjectRow.swift */,
-				281C583923B828C20077F951 /* EncourageView.swift */,
-				281C583B23B8E6A60077F951 /* HeaderView.swift */,
+				28C39F4423BC3DAA00AD0294 /* RecordTable.swift */,
+				28C39F4623BC415200AD0294 /* ToolsView.swift */,
+				28C39F4823BC711000AD0294 /* StopwatchView.swift */,
+				28C39F4A23BCCE8C00AD0294 /* AnalogStopwatch.swift */,
+				28DDCEE523C9E13A0062E209 /* ArcView.swift */,
 				28ED590E23B794F200B91A80 /* Model */,
 				28ED590923B7941E00B91A80 /* Resource */,
 				28ED58FB23B791FC00B91A80 /* Assets.xcassets */,
@@ -107,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				28ED590A23B7943600B91A80 /* givenData.json */,
+				28C39F4023BA39CA00AD0294 /* sampledata.json */,
 				28ED590C23B7944800B91A80 /* SubjectData.json */,
 			);
 			path = Resource;
@@ -115,10 +137,12 @@
 		28ED590E23B794F200B91A80 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				28ED590F23B7951E00B91A80 /* loadJsonData.swift */,
 				28ED591123B7968D00B91A80 /* MyProperty.swift */,
+				28DDCEE323C9D0010062E209 /* MyMethod.swift */,
+				28635F0023CB58FA00F3AED5 /* StopWatch.swift */,
 				28ED591323B7976E00B91A80 /* MySubjects.swift */,
 				281C583723B822060077F951 /* UserDataAccesible.swift */,
+				28ED590F23B7951E00B91A80 /* loadJsonData.swift */,
 				281C584123BA015A0077F951 /* CommunicationUnit.swift */,
 			);
 			path = Model;
@@ -184,6 +208,7 @@
 			files = (
 				28ED590223B791FC00B91A80 /* LaunchScreen.storyboard in Resources */,
 				28ED58FF23B791FC00B91A80 /* Preview Assets.xcassets in Resources */,
+				28C39F4123BA39CA00AD0294 /* sampledata.json in Resources */,
 				28ED590B23B7943600B91A80 /* givenData.json in Resources */,
 				28ED58FC23B791FC00B91A80 /* Assets.xcassets in Resources */,
 				28ED590D23B7944800B91A80 /* SubjectData.json in Resources */,
@@ -199,16 +224,23 @@
 			files = (
 				281C584223BA015A0077F951 /* CommunicationUnit.swift in Sources */,
 				28ED591823B7A0F700B91A80 /* SubjectList.swift in Sources */,
+				28C39F4723BC415200AD0294 /* ToolsView.swift in Sources */,
+				28DDCEE423C9D0010062E209 /* MyMethod.swift in Sources */,
 				28ED58F623B791F900B91A80 /* AppDelegate.swift in Sources */,
 				28ED58F823B791F900B91A80 /* SceneDelegate.swift in Sources */,
 				281C583823B822060077F951 /* UserDataAccesible.swift in Sources */,
 				28ED58FA23B791F900B91A80 /* ContentView.swift in Sources */,
 				28ED591223B7968D00B91A80 /* MyProperty.swift in Sources */,
+				28C39F4923BC711000AD0294 /* StopwatchView.swift in Sources */,
 				28ED591423B7976E00B91A80 /* MySubjects.swift in Sources */,
 				281C583C23B8E6A60077F951 /* HeaderView.swift in Sources */,
 				28ED591023B7951E00B91A80 /* loadJsonData.swift in Sources */,
 				281C583A23B828C20077F951 /* EncourageView.swift in Sources */,
+				28C39F4523BC3DAA00AD0294 /* RecordTable.swift in Sources */,
+				28DDCEE623C9E13A0062E209 /* ArcView.swift in Sources */,
+				28635F0123CB58FA00F3AED5 /* StopWatch.swift in Sources */,
 				28ED591623B79A3C00B91A80 /* SubjectRow.swift in Sources */,
+				28C39F4B23BCCE8C00AD0294 /* AnalogStopwatch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection = 0    
+    @State private var selection = 0
+    @State private var showEncourageView = true //　何のトリガーがなくても自動的に表示されるように初期値Trueにしちゃおう
     
     var body: some View {
+        
         TabView(selection: $selection){
             //            SubjectList.swift参照
             SubjectList()
@@ -24,16 +26,27 @@ struct ContentView: View {
                     }
             }
             .tag(0)
-            Text("Second View")
+            RecordTable()
                 .font(.title)
                 .tabItem {
                     VStack {
                         Image(systemName: "archivebox")
                         Text("Records")
                     }
-                }
-                .tag(1)
+            }
+            .tag(1)
+            ToolsView()
+                .font(.title)
+                .tabItem {
+                    VStack {
+                        Image(systemName: "cube.box")
+                        Text("Tools")
+                    }
+            }.tag(2)
+        }.sheet(isPresented: $showEncourageView) { // ステート変数の値に応じてEncourageViewを表示するぞ
+            EncourageView(showEncourageView: self.$showEncourageView)
         }
+        
     }
 }
 
