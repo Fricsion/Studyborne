@@ -27,7 +27,6 @@ struct ArcView: View {
 
         }
         .fill(color)
-        .shadow(radius: 5, x: -50, y: -50)
         
     }
 }
