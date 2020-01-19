@@ -9,11 +9,20 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @State var showingProfile: Bool = false
+    
     var body: some View {
-        Image(systemName: "person.circle")
-        .resizable()
-        .frame(width: 30, height: 30)
-            .foregroundColor(Color.blue)
+        Button(action: {
+            self.showingProfile.toggle()
+        }) {
+            Image(systemName: "person.circle")
+            .resizable()
+            .frame(width: 30, height: 30)
+                .foregroundColor(Color.blue)
+        }
+        .sheet(isPresented: $showingProfile) {
+            ProfileHost()
+        }
     }
 }
 

@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct SubjectRow: View {
-    var mydata: MyProperty
+    var mydata: Profile
     var subject: MySubjects
     
     var body: some View {

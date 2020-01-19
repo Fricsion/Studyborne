@@ -12,11 +12,16 @@
 		281C583C23B8E6A60077F951 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C583B23B8E6A60077F951 /* HeaderView.swift */; };
 		281C584223BA015A0077F951 /* CommunicationUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C584123BA015A0077F951 /* CommunicationUnit.swift */; };
 		28635F0123CB58FA00F3AED5 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28635F0023CB58FA00F3AED5 /* StopWatch.swift */; };
+		289040BA23D43777003F5A9E /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289040B923D43777003F5A9E /* ProfileHost.swift */; };
+		289040BC23D43819003F5A9E /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289040BB23D43819003F5A9E /* ProfileSummary.swift */; };
+		289040BE23D43823003F5A9E /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289040BD23D43823003F5A9E /* ProfileEditor.swift */; };
 		28C39F4123BA39CA00AD0294 /* sampledata.json in Resources */ = {isa = PBXBuildFile; fileRef = 28C39F4023BA39CA00AD0294 /* sampledata.json */; };
 		28C39F4523BC3DAA00AD0294 /* RecordTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C39F4423BC3DAA00AD0294 /* RecordTable.swift */; };
 		28C39F4723BC415200AD0294 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C39F4623BC415200AD0294 /* ToolsView.swift */; };
 		28C39F4923BC711000AD0294 /* StopwatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C39F4823BC711000AD0294 /* StopwatchView.swift */; };
 		28C39F4B23BCCE8C00AD0294 /* AnalogStopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C39F4A23BCCE8C00AD0294 /* AnalogStopwatch.swift */; };
+		28CA3F2923CDF46A00BD6C0A /* Timer_EndedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA3F2823CDF46A00BD6C0A /* Timer_EndedView.swift */; };
+		28CA3F2B23CDF55F00BD6C0A /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA3F2A23CDF55F00BD6C0A /* ConfirmView.swift */; };
 		28DDCEE423C9D0010062E209 /* MyMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDCEE323C9D0010062E209 /* MyMethod.swift */; };
 		28DDCEE623C9E13A0062E209 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDCEE523C9E13A0062E209 /* ArcView.swift */; };
 		28ED58F623B791F900B91A80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED58F523B791F900B91A80 /* AppDelegate.swift */; };
@@ -25,10 +30,10 @@
 		28ED58FC23B791FC00B91A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ED58FB23B791FC00B91A80 /* Assets.xcassets */; };
 		28ED58FF23B791FC00B91A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28ED58FE23B791FC00B91A80 /* Preview Assets.xcassets */; };
 		28ED590223B791FC00B91A80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28ED590023B791FC00B91A80 /* LaunchScreen.storyboard */; };
-		28ED590B23B7943600B91A80 /* givenData.json in Resources */ = {isa = PBXBuildFile; fileRef = 28ED590A23B7943600B91A80 /* givenData.json */; };
+		28ED590B23B7943600B91A80 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 28ED590A23B7943600B91A80 /* profile.json */; };
 		28ED590D23B7944800B91A80 /* SubjectData.json in Resources */ = {isa = PBXBuildFile; fileRef = 28ED590C23B7944800B91A80 /* SubjectData.json */; };
 		28ED591023B7951E00B91A80 /* loadJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED590F23B7951E00B91A80 /* loadJsonData.swift */; };
-		28ED591223B7968D00B91A80 /* MyProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591123B7968D00B91A80 /* MyProperty.swift */; };
+		28ED591223B7968D00B91A80 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591123B7968D00B91A80 /* Profile.swift */; };
 		28ED591423B7976E00B91A80 /* MySubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591323B7976E00B91A80 /* MySubjects.swift */; };
 		28ED591623B79A3C00B91A80 /* SubjectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591523B79A3C00B91A80 /* SubjectRow.swift */; };
 		28ED591823B7A0F700B91A80 /* SubjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591723B7A0F700B91A80 /* SubjectList.swift */; };
@@ -40,11 +45,16 @@
 		281C583B23B8E6A60077F951 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		281C584123BA015A0077F951 /* CommunicationUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationUnit.swift; sourceTree = "<group>"; };
 		28635F0023CB58FA00F3AED5 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		289040B923D43777003F5A9E /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		289040BB23D43819003F5A9E /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
+		289040BD23D43823003F5A9E /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 		28C39F4023BA39CA00AD0294 /* sampledata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampledata.json; sourceTree = "<group>"; };
 		28C39F4423BC3DAA00AD0294 /* RecordTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTable.swift; sourceTree = "<group>"; };
 		28C39F4623BC415200AD0294 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
 		28C39F4823BC711000AD0294 /* StopwatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchView.swift; sourceTree = "<group>"; };
 		28C39F4A23BCCE8C00AD0294 /* AnalogStopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogStopwatch.swift; sourceTree = "<group>"; };
+		28CA3F2823CDF46A00BD6C0A /* Timer_EndedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer_EndedView.swift; sourceTree = "<group>"; };
+		28CA3F2A23CDF55F00BD6C0A /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
 		28DDCEE323C9D0010062E209 /* MyMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMethod.swift; sourceTree = "<group>"; };
 		28DDCEE523C9E13A0062E209 /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		28ED58F223B791F900B91A80 /* Studyborne2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Studyborne2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,10 +65,10 @@
 		28ED58FE23B791FC00B91A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28ED590123B791FC00B91A80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28ED590323B791FC00B91A80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28ED590A23B7943600B91A80 /* givenData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = givenData.json; sourceTree = "<group>"; };
+		28ED590A23B7943600B91A80 /* profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
 		28ED590C23B7944800B91A80 /* SubjectData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SubjectData.json; sourceTree = "<group>"; };
 		28ED590F23B7951E00B91A80 /* loadJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadJsonData.swift; sourceTree = "<group>"; };
-		28ED591123B7968D00B91A80 /* MyProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProperty.swift; sourceTree = "<group>"; };
+		28ED591123B7968D00B91A80 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		28ED591323B7976E00B91A80 /* MySubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubjects.swift; sourceTree = "<group>"; };
 		28ED591523B79A3C00B91A80 /* SubjectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectRow.swift; sourceTree = "<group>"; };
 		28ED591723B7A0F700B91A80 /* SubjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectList.swift; sourceTree = "<group>"; };
@@ -75,6 +85,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		289040B823D43767003F5A9E /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				281C583B23B8E6A60077F951 /* HeaderView.swift */,
+				289040B923D43777003F5A9E /* ProfileHost.swift */,
+				289040BB23D43819003F5A9E /* ProfileSummary.swift */,
+				289040BD23D43823003F5A9E /* ProfileEditor.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		28E16D6823D08679006096E4 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				28C39F4823BC711000AD0294 /* StopwatchView.swift */,
+				28C39F4A23BCCE8C00AD0294 /* AnalogStopwatch.swift */,
+				28DDCEE523C9E13A0062E209 /* ArcView.swift */,
+				28CA3F2823CDF46A00BD6C0A /* Timer_EndedView.swift */,
+				28CA3F2A23CDF55F00BD6C0A /* ConfirmView.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		28E16D6923D086C2006096E4 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				28ED591723B7A0F700B91A80 /* SubjectList.swift */,
+				28ED591523B79A3C00B91A80 /* SubjectRow.swift */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
 		28ED58E923B791F900B91A80 = {
 			isa = PBXGroup;
 			children = (
@@ -97,16 +139,13 @@
 				28ED58F523B791F900B91A80 /* AppDelegate.swift */,
 				28ED58F723B791F900B91A80 /* SceneDelegate.swift */,
 				281C583923B828C20077F951 /* EncourageView.swift */,
-				281C583B23B8E6A60077F951 /* HeaderView.swift */,
 				28ED58F923B791F900B91A80 /* ContentView.swift */,
-				28ED591723B7A0F700B91A80 /* SubjectList.swift */,
-				28ED591523B79A3C00B91A80 /* SubjectRow.swift */,
+				289040B823D43767003F5A9E /* Profile */,
+				28E16D6923D086C2006096E4 /* Today */,
 				28C39F4423BC3DAA00AD0294 /* RecordTable.swift */,
 				28C39F4623BC415200AD0294 /* ToolsView.swift */,
-				28C39F4823BC711000AD0294 /* StopwatchView.swift */,
-				28C39F4A23BCCE8C00AD0294 /* AnalogStopwatch.swift */,
-				28DDCEE523C9E13A0062E209 /* ArcView.swift */,
-				28ED590E23B794F200B91A80 /* Model */,
+				28E16D6823D08679006096E4 /* Tools */,
+				28ED590E23B794F200B91A80 /* Scripts & Data */,
 				28ED590923B7941E00B91A80 /* Resource */,
 				28ED58FB23B791FC00B91A80 /* Assets.xcassets */,
 				28ED590023B791FC00B91A80 /* LaunchScreen.storyboard */,
@@ -127,25 +166,25 @@
 		28ED590923B7941E00B91A80 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				28ED590A23B7943600B91A80 /* givenData.json */,
+				28ED590A23B7943600B91A80 /* profile.json */,
 				28C39F4023BA39CA00AD0294 /* sampledata.json */,
 				28ED590C23B7944800B91A80 /* SubjectData.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		28ED590E23B794F200B91A80 /* Model */ = {
+		28ED590E23B794F200B91A80 /* Scripts & Data */ = {
 			isa = PBXGroup;
 			children = (
-				28ED591123B7968D00B91A80 /* MyProperty.swift */,
 				28DDCEE323C9D0010062E209 /* MyMethod.swift */,
 				28635F0023CB58FA00F3AED5 /* StopWatch.swift */,
+				28ED591123B7968D00B91A80 /* Profile.swift */,
 				28ED591323B7976E00B91A80 /* MySubjects.swift */,
 				281C583723B822060077F951 /* UserDataAccesible.swift */,
 				28ED590F23B7951E00B91A80 /* loadJsonData.swift */,
 				281C584123BA015A0077F951 /* CommunicationUnit.swift */,
 			);
-			path = Model;
+			path = "Scripts & Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +248,7 @@
 				28ED590223B791FC00B91A80 /* LaunchScreen.storyboard in Resources */,
 				28ED58FF23B791FC00B91A80 /* Preview Assets.xcassets in Resources */,
 				28C39F4123BA39CA00AD0294 /* sampledata.json in Resources */,
-				28ED590B23B7943600B91A80 /* givenData.json in Resources */,
+				28ED590B23B7943600B91A80 /* profile.json in Resources */,
 				28ED58FC23B791FC00B91A80 /* Assets.xcassets in Resources */,
 				28ED590D23B7944800B91A80 /* SubjectData.json in Resources */,
 			);
@@ -224,20 +263,25 @@
 			files = (
 				281C584223BA015A0077F951 /* CommunicationUnit.swift in Sources */,
 				28ED591823B7A0F700B91A80 /* SubjectList.swift in Sources */,
+				289040BE23D43823003F5A9E /* ProfileEditor.swift in Sources */,
 				28C39F4723BC415200AD0294 /* ToolsView.swift in Sources */,
+				289040BA23D43777003F5A9E /* ProfileHost.swift in Sources */,
 				28DDCEE423C9D0010062E209 /* MyMethod.swift in Sources */,
 				28ED58F623B791F900B91A80 /* AppDelegate.swift in Sources */,
 				28ED58F823B791F900B91A80 /* SceneDelegate.swift in Sources */,
 				281C583823B822060077F951 /* UserDataAccesible.swift in Sources */,
 				28ED58FA23B791F900B91A80 /* ContentView.swift in Sources */,
-				28ED591223B7968D00B91A80 /* MyProperty.swift in Sources */,
+				28ED591223B7968D00B91A80 /* Profile.swift in Sources */,
 				28C39F4923BC711000AD0294 /* StopwatchView.swift in Sources */,
 				28ED591423B7976E00B91A80 /* MySubjects.swift in Sources */,
+				28CA3F2923CDF46A00BD6C0A /* Timer_EndedView.swift in Sources */,
 				281C583C23B8E6A60077F951 /* HeaderView.swift in Sources */,
+				289040BC23D43819003F5A9E /* ProfileSummary.swift in Sources */,
 				28ED591023B7951E00B91A80 /* loadJsonData.swift in Sources */,
 				281C583A23B828C20077F951 /* EncourageView.swift in Sources */,
 				28C39F4523BC3DAA00AD0294 /* RecordTable.swift in Sources */,
 				28DDCEE623C9E13A0062E209 /* ArcView.swift in Sources */,
+				28CA3F2B23CDF55F00BD6C0A /* ConfirmView.swift in Sources */,
 				28635F0123CB58FA00F3AED5 /* StopWatch.swift in Sources */,
 				28ED591623B79A3C00B91A80 /* SubjectRow.swift in Sources */,
 				28C39F4B23BCCE8C00AD0294 /* AnalogStopwatch.swift in Sources */,

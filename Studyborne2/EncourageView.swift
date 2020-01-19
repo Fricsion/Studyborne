@@ -42,9 +42,23 @@ struct EncourageView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                     
-                    StopwatchView()
-                    
                     Spacer()
+                    
+                    Button(action: {
+                        self.showEncourageView = false
+                    }) {
+                        Text("! START NOW !")
+                            .fontWeight(.bold)
+                            .font(.title)
+                            .foregroundColor(.purple)
+                            .padding()
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(Color.purple, lineWidth: 5)
+                        )
+                        .shadow(radius: 10)
+                    }
+                    .offset(y: -100)
                     
                 }
             }

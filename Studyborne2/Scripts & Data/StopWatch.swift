@@ -44,9 +44,13 @@ class StopWatch: ObservableObject {
             self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: {timer in
                 let time_now = Date()
                 let (a, b) = gapTime(from: time_started, to: time_now)
+                
+                //------------------大問題(６０秒を超える理由がここにある)
                 self.hours_passed = a + self.hours_passed_init
                 self.minutes_passed = b + self.minutes_passed_init
+                //------------------------------（例えば初期値が２０だとしてそれに６０を足したら８０秒になるのは明らか）
                 print(self.hours_passed, self.minutes_passed)
+                
             })
         }
         

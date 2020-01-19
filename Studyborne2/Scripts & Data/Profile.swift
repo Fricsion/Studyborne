@@ -10,8 +10,12 @@ import Foundation
 
 // ユーザ設定など、個人のプリファレンスをまとめました。
 
-struct MyProperty: Hashable, Codable, Identifiable {
+struct Profile: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
+    var notificationPreference: Bool
     var time_countup: Int
+    
+    static let `default` = Self(id: 01, name: "test user", notificationPreference: true, time_countup: 30)
+    
 }

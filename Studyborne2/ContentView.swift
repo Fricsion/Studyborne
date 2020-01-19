@@ -43,7 +43,10 @@ struct ContentView: View {
                         Text("Tools")
                     }
             }.tag(2)
-        }.sheet(isPresented: $showEncourageView) { // ステート変数の値に応じてEncourageViewを表示するぞ
+            
+        }.sheet(isPresented: $showEncourageView, onDismiss: {
+            print("encourage view closed")
+        }) { // ステート変数の値に応じてEncourageViewを表示するぞ
             EncourageView(showEncourageView: self.$showEncourageView)
         }
         
