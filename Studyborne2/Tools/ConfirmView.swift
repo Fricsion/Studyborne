@@ -9,32 +9,17 @@
 import SwiftUI
 
 struct ConfirmView: View {
+    let timeSequence: [Array<Int>]
+    
     var body: some View {
         HStack {
-            Button(action: {}) {
-                Text("Yeah")
-                    .foregroundColor(.gray)
-                .padding()
-                .overlay(
-                    Circle()
-                        .stroke(Color.orange, style: StrokeStyle(lineWidth: 5, dash: [5]))
-                )
-            }
-            
-            Button(action: {}) {
-                Text("Still GOING")
-                .padding(50)
-                .overlay(
-                    Circle()
-                        .stroke(Color.green, style: StrokeStyle(lineWidth: 10))
-                )
-            }
+            Text("RecordConfirm")
         }
     }
 }
 
 struct ConfirmView_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmView()
+        ConfirmView(timeSequence: [[0, 0], [1, 0]])
     }
 }

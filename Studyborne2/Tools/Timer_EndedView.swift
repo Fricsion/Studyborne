@@ -14,33 +14,38 @@ struct Timer_EndedView: View {
     let stopwatch_running: StopWatch
     
     var Confirmation: some View {
-        VStack {
-            HStack {
-                Button(action: {}) {
-                    Text("Yeah")
-                        .foregroundColor(.gray)
-                    .padding()
-                    .overlay(
-                        Circle()
-                            .stroke(Color.orange, style: StrokeStyle(lineWidth: 5, dash: [5]))
-                    )
+        NavigationView {
+            VStack {
+                HStack {
+                    NavigationLink(destination: ConfirmView(timeSequence: stopwatch_running.markOffSequence)) {
+                        Text("Yeah")
+                            .foregroundColor(.gray)
+                        .padding()
+                        .overlay(
+                            Circle()
+                                .stroke(Color.orange, style: StrokeStyle(lineWidth: 5, dash: [5]))
+                        )
+                    }
+                    
+                    Button(action: {
+                        self.showTimer_EndedView = false
+                    }) {
+                        Text("Still GOING")
+                        .padding(50)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.green, style: StrokeStyle(lineWidth: 10))
+                        )
+                    }
                 }
+                .padding()
                 
-                Button(action: {
-                    self.showTimer_EndedView = false
-                }) {
-                    Text("Still GOING")
-                    .padding(50)
-                    .overlay(
-                        Circle()
-                            .stroke(Color.green, style: StrokeStyle(lineWidth: 10))
-                    )
-                }
+                Text("\(String(format: "%02d", Int(stopwatch_running.hours_passed))):\(String(format: "%02d", Int(stopwatch_running.minutes_passed)))")
+                    .font(.system(.title, design: .monospaced))
+                .padding()
+                
+                
             }
-            .padding()
-            Text("\(String(format: "%02d", Int(stopwatch_running.hours_passed))) : \(String(format: "%02d", Int(stopwatch_running.minutes_passed)))")
-                .font(.title)
-            
         }
     }
     var body: some View {

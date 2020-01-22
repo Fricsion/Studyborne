@@ -16,6 +16,8 @@ class StopWatch: ObservableObject {
     @Published var hours_passed: Int
     @Published var minutes_passed: Int
     
+    @Published var markOffSequence: [Array<Int>]
+    
     var hours_passed_init: Int
     var minutes_passed_init: Int
     
@@ -31,13 +33,15 @@ class StopWatch: ObservableObject {
         
         self.hours_passed_init = 0
         self.minutes_passed_init = 0
+        
+        self.markOffSequence = []
     }
     
     func startTimer() {
         self.isTimerValid = true
         let time_started = Date()
         
-        
+        self.markOffSequence.append([self.hours_passed_init, self.minutes_passed_init])
         
         if !self.timer.isValid {
             print("timer fired")
@@ -62,6 +66,14 @@ class StopWatch: ObservableObject {
         
         self.hours_passed_init = self.hours_passed
         self.minutes_passed_init = self.minutes_passed
+    }
+    
+    func markOff() {
+        self.markOffSequence.append([self.hours_passed, self.minutes_passed])
+        print("stopwatch marked off at \(self.hours_passed) : \(self.minutes_passed)")
+    }
+    
+    func endUp() {
         
     }
 }

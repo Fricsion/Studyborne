@@ -16,12 +16,14 @@ struct ProfileSummary: View {
             HStack {
                 Text(profile.name).bold()
                     .font(.title)
-                Text(String(profile.id))
+                Text(String("ID: \(profile.id)"))
                     .font(.caption)
             }
             
             
             Text("Notification: \(profile.notificationPreference ? "Enanbled" : "Disabled")")
+            
+            Text("Time Countup: \(profile.time_countup) min")
         }
     }
 }

@@ -54,9 +54,9 @@ struct SubjectRow: View {
 struct SubjectRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            SubjectRow(mydata: myData[0], subject: mySubjectData[0])
+            SubjectRow(mydata: myData, subject: mySubjectData[0])
             
-            SubjectRow(mydata: myData[0], subject: mySubjectData[1])
+            SubjectRow(mydata: myData, subject: mySubjectData[1])
         }
         .previewLayout(.fixed(width: 300, height: 100))
     }

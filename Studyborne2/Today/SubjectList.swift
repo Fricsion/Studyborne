@@ -17,7 +17,7 @@ struct SubjectList: View {
             VStack {
                 
                 List(userdata.subject) { subject in
-                    SubjectRow(mydata: myData[0], subject: subject)
+                    SubjectRow(mydata: myData, subject: subject)
                 }
                 .navigationBarTitle("Today")
                 .navigationBarItems(trailing: HeaderView())

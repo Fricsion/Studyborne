@@ -9,7 +9,7 @@
 import Foundation
 
 final class UserDataAccesible: ObservableObject {
-    @Published var mydata = myData;
+    @Published var userProfile = myData;
     @Published var subject = mySubjectData;
     
     // いずれもloadJsonData.swiftで定義した（右辺の）変数を代入している

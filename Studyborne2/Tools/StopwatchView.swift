@@ -42,7 +42,7 @@ struct StopwatchView: View {
                     }
                     
                     Button(action: {
-                        self.stopwatch.stopTimer()
+                        self.stopwatch.markOff()
                     }) {
                         Text("Mark Off")
                             .fontWeight(.bold)

@@ -31,5 +31,5 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
-var myData: [Profile] = load("profile.json")
+var myData: Profile = load("profile.json")
 var mySubjectData: [MySubjects] = load("SubjectData.json")
