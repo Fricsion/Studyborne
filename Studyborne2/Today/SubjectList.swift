@@ -10,14 +10,14 @@ import UIKit
 import SwiftUI
 
 struct SubjectList: View {
-    @EnvironmentObject private var userdata: UserDataAccesible
+    @EnvironmentObject private var userData: UserDataAccesible
     
     var body: some View {
         NavigationView {
             VStack {
                 
-                List(userdata.subject) { subject in
-                    SubjectRow(mydata: myData, subject: subject)
+                List(userData.subjects) { subject in
+                    SubjectRow(mydata: self.userData.userProfile, subject: subject)
                 }
                 .navigationBarTitle("Today")
                 .navigationBarItems(trailing: HeaderView())

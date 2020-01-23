@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct ToolsView: View {
+    var startImmediately: Bool
+    
     var body: some View {
         NavigationView {
-            StopwatchView()
+            StopwatchView(startImmediately: startImmediately)
                 .navigationBarTitle("Stop Watch")
                 .navigationBarItems(trailing: HeaderView())
         }
@@ -20,6 +22,6 @@ struct ToolsView: View {
 
 struct ToolsView_Previews: PreviewProvider {
     static var previews: some View {
-        ToolsView()
+        ToolsView(startImmediately: false)
     }
 }

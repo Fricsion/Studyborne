@@ -11,6 +11,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var selection = 0
     @State private var showEncourageView = true //　何のトリガーがなくても自動的に表示されるように初期値Trueにしちゃおう
+    @State private var startImmediately = false
     
     var body: some View {
         
@@ -35,7 +36,7 @@ struct ContentView: View {
                     }
             }
             .tag(1)
-            ToolsView()
+            ToolsView(startImmediately: self.startImmediately)
                 .font(.title)
                 .tabItem {
                     VStack {
@@ -44,10 +45,14 @@ struct ContentView: View {
                     }
             }.tag(2)
             
-        }.sheet(isPresented: $showEncourageView, onDismiss: {
-            print("encourage view closed")
-        }) { // ステート変数の値に応じてEncourageViewを表示するぞ
-            EncourageView(showEncourageView: self.$showEncourageView)
+        }.sheet(isPresented: $showEncourageView) { // ステート変数の値に応じてEncourageViewを表示するぞ
+            EncourageView(showEncourageView: self.$showEncourageView, startImmediately: self.$startImmediately, selection: self.$selection)
+        }
+        .onDisappear() {
+            print("EncourageView closed")
+//            if self.startImmediately {
+//                self.selection = 2
+//            }
         }
         
     }

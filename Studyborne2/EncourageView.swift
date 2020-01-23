@@ -11,6 +11,8 @@ import SwiftUI
 struct EncourageView: View {
     
     @Binding var showEncourageView: Bool
+    @Binding var startImmediately: Bool
+    @Binding var selection: Int
     
     let backGroundColor = LinearGradient(gradient: Gradient(colors: [Color.pink, Color.yellow]), startPoint: .top, endPoint: .bottom)
     
@@ -46,6 +48,8 @@ struct EncourageView: View {
                     
                     Button(action: {
                         self.showEncourageView = false
+                        self.startImmediately = true
+                        self.selection = 2
                     }) {
                         Text("! START NOW !")
                             .fontWeight(.bold)
@@ -68,6 +72,6 @@ struct EncourageView: View {
 
 struct EncourageView_Previews: PreviewProvider {
     static var previews: some View {
-        EncourageView(showEncourageView: .constant(true))
+        EncourageView(showEncourageView: .constant(true), startImmediately: .constant(false), selection: .constant(0))
     }
 }
