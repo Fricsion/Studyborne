@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var userData: UserDataAccessible
     @State private var selection = 0
     @State private var showEncourageView = true //　何のトリガーがなくても自動的に表示されるように初期値Trueにしちゃおう
     @State private var startImmediately = false
@@ -18,7 +19,7 @@ struct ContentView: View {
         TabView(selection: $selection){
             //            SubjectList.swift参照
             SubjectList()
-                .environmentObject(UserDataAccesible())
+                .environmentObject(UserDataAccessible())
                 .font(.title)
                 .tabItem {
                     VStack {
@@ -28,6 +29,7 @@ struct ContentView: View {
             }
             .tag(0)
             RecordTable()
+                .environmentObject(UserDataAccessible())
                 .font(.title)
                 .tabItem {
                     VStack {
@@ -37,6 +39,7 @@ struct ContentView: View {
             }
             .tag(1)
             ToolsView(startImmediately: self.startImmediately)
+                .environmentObject(UserDataAccessible())
                 .font(.title)
                 .tabItem {
                     VStack {
@@ -50,9 +53,6 @@ struct ContentView: View {
         }
         .onDisappear() {
             print("EncourageView closed")
-//            if self.startImmediately {
-//                self.selection = 2
-//            }
         }
         
     }
@@ -61,5 +61,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(UserDataAccessible())
     }
 }

@@ -10,7 +10,7 @@ import SwiftUI
 
 struct HeaderView: View {
     @State var showingProfile: Bool = false
-    @EnvironmentObject var userData: UserDataAccesible
+    @EnvironmentObject var userData: UserDataAccessible
     
     var body: some View {
         Button(action: {
@@ -32,6 +32,6 @@ struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
         HeaderView()
             .previewLayout(.fixed(width: 30, height: 30))
-            .environmentObject(UserDataAccesible())
+            .environmentObject(UserDataAccessible())
     }
 }

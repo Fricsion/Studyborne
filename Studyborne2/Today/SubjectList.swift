@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 
 struct SubjectList: View {
-    @EnvironmentObject private var userData: UserDataAccesible
+    @EnvironmentObject private var userData: UserDataAccessible
     
     var body: some View {
         NavigationView {
@@ -20,7 +20,7 @@ struct SubjectList: View {
                     SubjectRow(mydata: self.userData.userProfile, subject: subject)
                 }
                 .navigationBarTitle("Today")
-                .navigationBarItems(trailing: HeaderView())
+                .navigationBarItems(trailing: HeaderView().environmentObject(userData))
                 
                 
                 Button(action: {}) {
@@ -38,6 +38,6 @@ struct SubjectList: View {
 struct SubjectList_Previews: PreviewProvider {
     static var previews: some View {
         SubjectList()
-        .environmentObject(UserDataAccesible())
+        .environmentObject(UserDataAccessible())
     }
 }

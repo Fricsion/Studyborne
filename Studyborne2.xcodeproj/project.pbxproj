@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		281C583823B822060077F951 /* UserDataAccesible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C583723B822060077F951 /* UserDataAccesible.swift */; };
+		281C583823B822060077F951 /* UserDataAccessible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C583723B822060077F951 /* UserDataAccessible.swift */; };
 		281C583A23B828C20077F951 /* EncourageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C583923B828C20077F951 /* EncourageView.swift */; };
 		281C583C23B8E6A60077F951 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C583B23B8E6A60077F951 /* HeaderView.swift */; };
 		281C584223BA015A0077F951 /* CommunicationUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C584123BA015A0077F951 /* CommunicationUnit.swift */; };
@@ -43,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		28065E4E23D5F55500236796 /* Studyborne2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Studyborne2.entitlements; sourceTree = "<group>"; };
-		281C583723B822060077F951 /* UserDataAccesible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataAccesible.swift; sourceTree = "<group>"; };
+		281C583723B822060077F951 /* UserDataAccessible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataAccessible.swift; sourceTree = "<group>"; };
 		281C583923B828C20077F951 /* EncourageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncourageView.swift; sourceTree = "<group>"; };
 		281C583B23B8E6A60077F951 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		281C584123BA015A0077F951 /* CommunicationUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationUnit.swift; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 				28635F0023CB58FA00F3AED5 /* StopWatch.swift */,
 				28ED591123B7968D00B91A80 /* Profile.swift */,
 				28ED591323B7976E00B91A80 /* MySubjects.swift */,
-				281C583723B822060077F951 /* UserDataAccesible.swift */,
+				281C583723B822060077F951 /* UserDataAccessible.swift */,
 				28ED590F23B7951E00B91A80 /* loadJsonData.swift */,
 				281C584123BA015A0077F951 /* CommunicationUnit.swift */,
 			);
@@ -286,7 +286,7 @@
 				28ED58F623B791F900B91A80 /* AppDelegate.swift in Sources */,
 				28ED58F823B791F900B91A80 /* SceneDelegate.swift in Sources */,
 				28607AB223D8A064004BF952 /* ConfirmSubjectView.swift in Sources */,
-				281C583823B822060077F951 /* UserDataAccesible.swift in Sources */,
+				281C583823B822060077F951 /* UserDataAccessible.swift in Sources */,
 				28ED58FA23B791F900B91A80 /* ContentView.swift in Sources */,
 				28ED591223B7968D00B91A80 /* Profile.swift in Sources */,
 				28C39F4923BC711000AD0294 /* StopwatchView.swift in Sources */,

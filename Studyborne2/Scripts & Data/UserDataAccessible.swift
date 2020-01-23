@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class UserDataAccesible: ObservableObject {
+final class UserDataAccessible: ObservableObject {
     @Published var userProfile = myData;
     @Published var subjects = mySubjectData;
     

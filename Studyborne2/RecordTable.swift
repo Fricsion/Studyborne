@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct RecordTable: View {
+    @EnvironmentObject private var userData: UserDataAccessible
     var body: some View {
         VStack {
             NavigationView {
@@ -17,7 +18,7 @@ struct RecordTable: View {
                     
                 }
                 .navigationBarTitle("This Week")
-                .navigationBarItems(trailing: HeaderView())
+                .navigationBarItems(trailing: HeaderView().environmentObject(userData))
             }
             NavigationView {
                 VStack {
@@ -34,5 +35,6 @@ struct RecordTable: View {
 struct RecordTable_Previews: PreviewProvider {
     static var previews: some View {
         RecordTable()
+        .environmentObject(UserDataAccessible())
     }
 }

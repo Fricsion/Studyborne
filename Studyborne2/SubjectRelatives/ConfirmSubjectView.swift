@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ConfirmSubjectView: View {
-    @EnvironmentObject var userData: UserDataAccesible
+    @EnvironmentObject var userData: UserDataAccessible
     
     var body: some View {
         
@@ -31,6 +31,6 @@ struct ConfirmSubjectView: View {
 struct ConfirmSubjectView_Previews: PreviewProvider {
     static var previews: some View {
         ConfirmSubjectView()
-            .environmentObject(UserDataAccesible())
+            .environmentObject(UserDataAccessible())
     }
 }
