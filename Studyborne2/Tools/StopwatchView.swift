@@ -81,6 +81,7 @@ struct StopwatchView: View {
         .onAppear() {
             if self.startImmediately {
                 self.stopwatch.startTimer()
+                
             }
         }
         .sheet(isPresented: $showTimer_EndedView, onDismiss: {

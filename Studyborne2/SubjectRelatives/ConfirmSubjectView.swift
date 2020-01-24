@@ -20,7 +20,7 @@ struct ConfirmSubjectView: View {
                     .overlay(
                         Circle()
                             .stroke(Color.gray, style: StrokeStyle(lineWidth: 5))
-                        
+
                 )
             }
         }
