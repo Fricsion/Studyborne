@@ -10,11 +10,11 @@ import SwiftUI
 
 struct ToolsView: View {
     @EnvironmentObject private var userData: UserDataAccessible
-    var startImmediately: Bool
+    @Binding var startImmediately: Bool
     
     var body: some View {
         NavigationView {
-            StopwatchView(startImmediately: startImmediately)
+            StopwatchView(startImmediately: self.$startImmediately)
                 .navigationBarTitle("Stop Watch")
                 .navigationBarItems(trailing: HeaderView().environmentObject(userData))
         }
@@ -23,7 +23,7 @@ struct ToolsView: View {
 
 struct ToolsView_Previews: PreviewProvider {
     static var previews: some View {
-        ToolsView(startImmediately: false)
+        ToolsView(startImmediately: .constant(false))
         .environmentObject(UserDataAccessible())
     }
 }

@@ -12,7 +12,7 @@ struct StopwatchView: View {
     
     @ObservedObject var stopwatch = StopWatch()
     @State private var showTimer_EndedView = false
-    var startImmediately: Bool
+    @Binding var startImmediately: Bool
     
     var body: some View {
         VStack {
@@ -81,7 +81,7 @@ struct StopwatchView: View {
         .onAppear() {
             if self.startImmediately {
                 self.stopwatch.startTimer()
-                
+                self.startImmediately = false
             }
         }
         .sheet(isPresented: $showTimer_EndedView, onDismiss: {
@@ -97,6 +97,6 @@ struct StopwatchView: View {
 
 struct StopwatchView_Previews: PreviewProvider {
     static var previews: some View {
-        StopwatchView(startImmediately: false)
+        StopwatchView(startImmediately: .constant(false))
     }
 }

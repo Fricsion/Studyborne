@@ -38,12 +38,9 @@ struct ContentView: View {
                     }
             }
             .tag(1)
-            ToolsView(startImmediately: self.startImmediately)
+            ToolsView(startImmediately: self.$startImmediately)
                 .environmentObject(UserDataAccessible())
                 .font(.title)
-                .onDisappear() {
-                    self.startImmediately = false
-            }
                 .tabItem {
                     VStack {
                         Image(systemName: "cube.box")
