@@ -24,6 +24,8 @@
 		28C39F4B23BCCE8C00AD0294 /* AnalogStopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C39F4A23BCCE8C00AD0294 /* AnalogStopwatch.swift */; };
 		28CA3F2923CDF46A00BD6C0A /* Timer_EndedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA3F2823CDF46A00BD6C0A /* Timer_EndedView.swift */; };
 		28CA3F2B23CDF55F00BD6C0A /* ConfirmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28CA3F2A23CDF55F00BD6C0A /* ConfirmView.swift */; };
+		28D175D423DF2FA300CE3C08 /* ScheduleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D175D323DF2FA300CE3C08 /* ScheduleData.json */; };
+		28D175D623DF337900CE3C08 /* MyScheduleSt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D175D523DF337900CE3C08 /* MyScheduleSt.swift */; };
 		28DDCEE423C9D0010062E209 /* MyMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDCEE323C9D0010062E209 /* MyMethod.swift */; };
 		28DDCEE623C9E13A0062E209 /* ArcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DDCEE523C9E13A0062E209 /* ArcView.swift */; };
 		28ED58F623B791F900B91A80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED58F523B791F900B91A80 /* AppDelegate.swift */; };
@@ -35,8 +37,8 @@
 		28ED590B23B7943600B91A80 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 28ED590A23B7943600B91A80 /* profile.json */; };
 		28ED590D23B7944800B91A80 /* SubjectData.json in Resources */ = {isa = PBXBuildFile; fileRef = 28ED590C23B7944800B91A80 /* SubjectData.json */; };
 		28ED591023B7951E00B91A80 /* loadJsonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED590F23B7951E00B91A80 /* loadJsonData.swift */; };
-		28ED591223B7968D00B91A80 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591123B7968D00B91A80 /* Profile.swift */; };
-		28ED591423B7976E00B91A80 /* MySubjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591323B7976E00B91A80 /* MySubjects.swift */; };
+		28ED591223B7968D00B91A80 /* ProfileSt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591123B7968D00B91A80 /* ProfileSt.swift */; };
+		28ED591423B7976E00B91A80 /* MySubjectsSt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591323B7976E00B91A80 /* MySubjectsSt.swift */; };
 		28ED591623B79A3C00B91A80 /* SubjectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591523B79A3C00B91A80 /* SubjectRow.swift */; };
 		28ED591823B7A0F700B91A80 /* SubjectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28ED591723B7A0F700B91A80 /* SubjectList.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +62,8 @@
 		28C39F4A23BCCE8C00AD0294 /* AnalogStopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalogStopwatch.swift; sourceTree = "<group>"; };
 		28CA3F2823CDF46A00BD6C0A /* Timer_EndedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer_EndedView.swift; sourceTree = "<group>"; };
 		28CA3F2A23CDF55F00BD6C0A /* ConfirmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmView.swift; sourceTree = "<group>"; };
+		28D175D323DF2FA300CE3C08 /* ScheduleData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ScheduleData.json; sourceTree = "<group>"; };
+		28D175D523DF337900CE3C08 /* MyScheduleSt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyScheduleSt.swift; sourceTree = "<group>"; };
 		28DDCEE323C9D0010062E209 /* MyMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMethod.swift; sourceTree = "<group>"; };
 		28DDCEE523C9E13A0062E209 /* ArcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcView.swift; sourceTree = "<group>"; };
 		28ED58F223B791F900B91A80 /* Studyborne2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Studyborne2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,8 +77,8 @@
 		28ED590A23B7943600B91A80 /* profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
 		28ED590C23B7944800B91A80 /* SubjectData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SubjectData.json; sourceTree = "<group>"; };
 		28ED590F23B7951E00B91A80 /* loadJsonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadJsonData.swift; sourceTree = "<group>"; };
-		28ED591123B7968D00B91A80 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		28ED591323B7976E00B91A80 /* MySubjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubjects.swift; sourceTree = "<group>"; };
+		28ED591123B7968D00B91A80 /* ProfileSt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSt.swift; sourceTree = "<group>"; };
+		28ED591323B7976E00B91A80 /* MySubjectsSt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySubjectsSt.swift; sourceTree = "<group>"; };
 		28ED591523B79A3C00B91A80 /* SubjectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectRow.swift; sourceTree = "<group>"; };
 		28ED591723B7A0F700B91A80 /* SubjectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,6 +189,7 @@
 				28ED590A23B7943600B91A80 /* profile.json */,
 				28C39F4023BA39CA00AD0294 /* sampledata.json */,
 				28ED590C23B7944800B91A80 /* SubjectData.json */,
+				28D175D323DF2FA300CE3C08 /* ScheduleData.json */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -192,12 +197,13 @@
 		28ED590E23B794F200B91A80 /* Scripts & Data */ = {
 			isa = PBXGroup;
 			children = (
-				28DDCEE323C9D0010062E209 /* MyMethod.swift */,
-				28635F0023CB58FA00F3AED5 /* StopWatch.swift */,
-				28ED591123B7968D00B91A80 /* Profile.swift */,
-				28ED591323B7976E00B91A80 /* MySubjects.swift */,
 				281C583723B822060077F951 /* UserDataAccessible.swift */,
 				28ED590F23B7951E00B91A80 /* loadJsonData.swift */,
+				28DDCEE323C9D0010062E209 /* MyMethod.swift */,
+				28635F0023CB58FA00F3AED5 /* StopWatch.swift */,
+				28ED591123B7968D00B91A80 /* ProfileSt.swift */,
+				28ED591323B7976E00B91A80 /* MySubjectsSt.swift */,
+				28D175D523DF337900CE3C08 /* MyScheduleSt.swift */,
 				281C584123BA015A0077F951 /* CommunicationUnit.swift */,
 			);
 			path = "Scripts & Data";
@@ -267,6 +273,7 @@
 				28ED590B23B7943600B91A80 /* profile.json in Resources */,
 				28ED58FC23B791FC00B91A80 /* Assets.xcassets in Resources */,
 				28ED590D23B7944800B91A80 /* SubjectData.json in Resources */,
+				28D175D423DF2FA300CE3C08 /* ScheduleData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,11 +295,12 @@
 				28607AB223D8A064004BF952 /* ConfirmSubjectView.swift in Sources */,
 				281C583823B822060077F951 /* UserDataAccessible.swift in Sources */,
 				28ED58FA23B791F900B91A80 /* ContentView.swift in Sources */,
-				28ED591223B7968D00B91A80 /* Profile.swift in Sources */,
+				28ED591223B7968D00B91A80 /* ProfileSt.swift in Sources */,
 				28C39F4923BC711000AD0294 /* StopwatchView.swift in Sources */,
-				28ED591423B7976E00B91A80 /* MySubjects.swift in Sources */,
+				28ED591423B7976E00B91A80 /* MySubjectsSt.swift in Sources */,
 				28CA3F2923CDF46A00BD6C0A /* Timer_EndedView.swift in Sources */,
 				281C583C23B8E6A60077F951 /* HeaderView.swift in Sources */,
+				28D175D623DF337900CE3C08 /* MyScheduleSt.swift in Sources */,
 				289040BC23D43819003F5A9E /* ProfileSummary.swift in Sources */,
 				28607AB523D8A7D5004BF952 /* ScheduleView.swift in Sources */,
 				28ED591023B7951E00B91A80 /* loadJsonData.swift in Sources */,

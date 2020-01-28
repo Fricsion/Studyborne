@@ -9,15 +9,17 @@
 import SwiftUI
 
 struct TodayScheduleView: View {
+    @EnvironmentObject var userData: UserDataAccessible
     var body: some View {
         HStack {
             List(0..<24) { i in
-                Text("\(i)")
+                
+                Text(String(format: "%02d", i))
                     .font(.system(.caption, design: .monospaced))
                 
                 Divider()
                 
-                Text("this is the schedule")
+                Text("hello")
                 
                 Divider()
                 
@@ -31,5 +33,6 @@ struct TodayScheduleView: View {
 struct TodayScheduleView_Previews: PreviewProvider {
     static var previews: some View {
         TodayScheduleView()
+        .environmentObject(UserDataAccessible())
     }
 }

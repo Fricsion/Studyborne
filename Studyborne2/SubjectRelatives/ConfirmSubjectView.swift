@@ -13,18 +13,19 @@ struct ConfirmSubjectView: View {
     
     var body: some View {
         
-        ForEach(userData.subjects) { subject in
-            Button(action: {}) {
-                Text(subject.title)
-                    .padding(50)
-                    .overlay(
-                        Circle()
-                            .stroke(Color.gray, style: StrokeStyle(lineWidth: 5))
-
-                )
+        List {
+            ForEach(userData.subjects) { subject in
+                Button(action: {}) {
+                    Text(subject.title)
+                        .padding(50)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.gray, style: StrokeStyle(lineWidth: 5))
+                            
+                    )
+                }
             }
         }
-        
     }
 }
 
