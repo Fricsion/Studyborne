@@ -11,8 +11,10 @@
 		281C583A23B828C20077F951 /* EncourageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C583923B828C20077F951 /* EncourageView.swift */; };
 		281C583C23B8E6A60077F951 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C583B23B8E6A60077F951 /* HeaderView.swift */; };
 		281C584223BA015A0077F951 /* CommunicationUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281C584123BA015A0077F951 /* CommunicationUnit.swift */; };
+		281E650423E1E3ED009CE1F7 /* ScheduleSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281E650323E1E3ED009CE1F7 /* ScheduleSummary.swift */; };
+		281E650723E1E65A009CE1F7 /* AddSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281E650623E1E65A009CE1F7 /* AddSubject.swift */; };
 		28607AB223D8A064004BF952 /* ConfirmSubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28607AB123D8A064004BF952 /* ConfirmSubjectView.swift */; };
-		28607AB523D8A7D5004BF952 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28607AB423D8A7D5004BF952 /* ScheduleView.swift */; };
+		28607AB523D8A7D5004BF952 /* ScheduleEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28607AB423D8A7D5004BF952 /* ScheduleEditorView.swift */; };
 		28635F0123CB58FA00F3AED5 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28635F0023CB58FA00F3AED5 /* StopWatch.swift */; };
 		289040BA23D43777003F5A9E /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289040B923D43777003F5A9E /* ProfileHost.swift */; };
 		289040BC23D43819003F5A9E /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289040BB23D43819003F5A9E /* ProfileSummary.swift */; };
@@ -49,8 +51,10 @@
 		281C583923B828C20077F951 /* EncourageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncourageView.swift; sourceTree = "<group>"; };
 		281C583B23B8E6A60077F951 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		281C584123BA015A0077F951 /* CommunicationUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicationUnit.swift; sourceTree = "<group>"; };
+		281E650323E1E3ED009CE1F7 /* ScheduleSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleSummary.swift; sourceTree = "<group>"; };
+		281E650623E1E65A009CE1F7 /* AddSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubject.swift; sourceTree = "<group>"; };
 		28607AB123D8A064004BF952 /* ConfirmSubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmSubjectView.swift; sourceTree = "<group>"; };
-		28607AB423D8A7D5004BF952 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		28607AB423D8A7D5004BF952 /* ScheduleEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEditorView.swift; sourceTree = "<group>"; };
 		28635F0023CB58FA00F3AED5 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 		289040B923D43777003F5A9E /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
 		289040BB23D43819003F5A9E /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
@@ -94,6 +98,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		281E650523E1E587009CE1F7 /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				281E650623E1E65A009CE1F7 /* AddSubject.swift */,
+				28ED591723B7A0F700B91A80 /* SubjectList.swift */,
+				28ED591523B79A3C00B91A80 /* SubjectRow.swift */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
 		28607AB023D8A023004BF952 /* SubjectRelatives */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,14 +139,13 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
-		28E16D6923D086C2006096E4 /* Today */ = {
+		28E16D6923D086C2006096E4 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				28607AB423D8A7D5004BF952 /* ScheduleView.swift */,
-				28ED591723B7A0F700B91A80 /* SubjectList.swift */,
-				28ED591523B79A3C00B91A80 /* SubjectRow.swift */,
+				28607AB423D8A7D5004BF952 /* ScheduleEditorView.swift */,
+				281E650323E1E3ED009CE1F7 /* ScheduleSummary.swift */,
 			);
-			path = Today;
+			path = Schedule;
 			sourceTree = "<group>";
 		};
 		28ED58E923B791F900B91A80 = {
@@ -160,7 +173,8 @@
 				281C583923B828C20077F951 /* EncourageView.swift */,
 				28ED58F923B791F900B91A80 /* ContentView.swift */,
 				289040B823D43767003F5A9E /* Profile */,
-				28E16D6923D086C2006096E4 /* Today */,
+				28E16D6923D086C2006096E4 /* Schedule */,
+				281E650523E1E587009CE1F7 /* Subject */,
 				28C39F4423BC3DAA00AD0294 /* RecordTable.swift */,
 				28C39F4623BC415200AD0294 /* ToolsView.swift */,
 				28607AB023D8A023004BF952 /* SubjectRelatives */,
@@ -288,6 +302,7 @@
 				28ED591823B7A0F700B91A80 /* SubjectList.swift in Sources */,
 				289040BE23D43823003F5A9E /* ProfileEditor.swift in Sources */,
 				28C39F4723BC415200AD0294 /* ToolsView.swift in Sources */,
+				281E650723E1E65A009CE1F7 /* AddSubject.swift in Sources */,
 				289040BA23D43777003F5A9E /* ProfileHost.swift in Sources */,
 				28DDCEE423C9D0010062E209 /* MyMethod.swift in Sources */,
 				28ED58F623B791F900B91A80 /* AppDelegate.swift in Sources */,
@@ -302,11 +317,12 @@
 				281C583C23B8E6A60077F951 /* HeaderView.swift in Sources */,
 				28D175D623DF337900CE3C08 /* MyScheduleSt.swift in Sources */,
 				289040BC23D43819003F5A9E /* ProfileSummary.swift in Sources */,
-				28607AB523D8A7D5004BF952 /* ScheduleView.swift in Sources */,
+				28607AB523D8A7D5004BF952 /* ScheduleEditorView.swift in Sources */,
 				28ED591023B7951E00B91A80 /* loadJsonData.swift in Sources */,
 				281C583A23B828C20077F951 /* EncourageView.swift in Sources */,
 				28C39F4523BC3DAA00AD0294 /* RecordTable.swift in Sources */,
 				28DDCEE623C9E13A0062E209 /* ArcView.swift in Sources */,
+				281E650423E1E3ED009CE1F7 /* ScheduleSummary.swift in Sources */,
 				28CA3F2B23CDF55F00BD6C0A /* ConfirmView.swift in Sources */,
 				28635F0123CB58FA00F3AED5 /* StopWatch.swift in Sources */,
 				28ED591623B79A3C00B91A80 /* SubjectRow.swift in Sources */,

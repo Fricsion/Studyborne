@@ -13,11 +13,15 @@ import Foundation
 struct MySchedule: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
-    var source: Array<ofTheClock>
+    var source: [ofTheClock]
+    
+    static let `default` = Self(id: 0, name: "TEST_schedule", source: [ofTheClock.default])
 }
 
 struct ofTheClock: Hashable, Codable {
     var ofTheClock: Int
     var title: String
     var color: String
+    
+    static let `default` = Self(ofTheClock: 1, title: "TEST", color: "white")
 }

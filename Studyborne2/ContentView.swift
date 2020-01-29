@@ -18,8 +18,8 @@ struct ContentView: View {
         
         TabView(selection: $selection){
             //            SubjectList.swift参照
-            SubjectList()
-                .environmentObject(UserDataAccessible())
+            ScheduleSummary()
+                .environmentObject(self.userData)
                 .font(.title)
                 .tabItem {
                     VStack {
@@ -29,7 +29,7 @@ struct ContentView: View {
             }
             .tag(0)
             RecordTable()
-                .environmentObject(UserDataAccessible())
+                .environmentObject(self.userData)
                 .font(.title)
                 .tabItem {
                     VStack {
@@ -39,7 +39,7 @@ struct ContentView: View {
             }
             .tag(1)
             ToolsView(startImmediately: self.$startImmediately)
-                .environmentObject(UserDataAccessible())
+                .environmentObject(self.userData)
                 .font(.title)
                 .tabItem {
                     VStack {

@@ -53,6 +53,10 @@ class StopWatch: ObservableObject {
                 self.hours_passed = b / 60 + self.hours_passed_init
                 self.minutes_passed = b % 60
                 
+                if self.minutes_passed == 59 {
+                    stopwatchNotify(passed: self.minutes_passed)
+                }
+                
             })
         }
         
