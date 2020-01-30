@@ -10,18 +10,33 @@ import SwiftUI
 
 struct AddSubject: View {
     @Binding var showingAddSubject: Bool
-    @State var new_subject_name: String = ""
+    @State var new_subject: MySubjects
     
     var body: some View {
-        VStack {
+        List {
             HStack {
                 Text("NAMED")
                 
                 Divider()
                 
-                TextField("type your new subject", text: $new_subject_name)
+                TextField("type your new subject", text: $new_subject.title)
+                
+                
             }
             
+//            VStack {
+//                Text("Tag for this subject").bold()
+//
+//                Picker("Tag", selection: $new_subject) {
+//                    ForEach(MySubjects.Tags.allCases, id: \.self) { i in
+//                        Text(i.rawValue).tag()
+//                    }
+//                }
+//                .pickerStyle(SegmentedPickerStyle())
+//
+//            }
+//            .padding(.top)
+//
         }
         .padding()
         
@@ -30,6 +45,6 @@ struct AddSubject: View {
 
 struct AddSubjectView_Previews: PreviewProvider {
     static var previews: some View {
-        AddSubject(showingAddSubject: .constant(true))
+        AddSubject(showingAddSubject: .constant(true), new_subject: MySubjects.default)
     }
 }

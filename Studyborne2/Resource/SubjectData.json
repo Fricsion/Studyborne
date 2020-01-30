@@ -1,18 +1,21 @@
 [{
 "title": "Math",
 "id": 0,
+"tag": 0,
 "color": "Color.blue",
 "today_time": 0
 },
 {
 "title": "English",
 "id": 1,
+"tag": 1,
 "color": "Color.yellow",
 "today_time": 0
 },
 {
 "title": "Literary",
 "id": 2,
+"tag": 1
 "color": "Color.red",
 "today_time": 0
 }]

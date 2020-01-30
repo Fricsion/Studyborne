@@ -465,7 +465,7 @@
 				CODE_SIGN_ENTITLEMENTS = Studyborne2/Studyborne2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Studyborne2/Preview Content\"";
-				DEVELOPMENT_TEAM = 75C536NW4W;
+				DEVELOPMENT_TEAM = V35C94NUWB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Studyborne2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,7 +486,7 @@
 				CODE_SIGN_ENTITLEMENTS = Studyborne2/Studyborne2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Studyborne2/Preview Content\"";
-				DEVELOPMENT_TEAM = 75C536NW4W;
+				DEVELOPMENT_TEAM = V35C94NUWB;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Studyborne2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

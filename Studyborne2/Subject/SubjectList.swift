@@ -30,7 +30,7 @@ struct SubjectList: View {
             }
         }
         .sheet(isPresented: $showingAddSubject) {
-            AddSubject(showingAddSubject: self.$showingAddSubject)
+            AddSubject(showingAddSubject: self.$showingAddSubject, new_subject: MySubjects.default)
         }
         
     }
